@@ -9,11 +9,12 @@ Summary:	Unix::Conf::Bind8 - manipulating a Bind8 conf and associated zone recor
 Summary(pl):	Unix::Conf::Bind8 - manipulowanie plikami konfiguracyjnymi Bind8 i plikami stref
 Name:		perl-Unix-Conf-Bind8
 Version:	0.3
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a31aae28a2deb512d8b49ce1eaca17db
+Patch0:		%{name}-require_bareword.patch
 URL:		http://www.extremix.net/UnixConf/
 BuildRequires:	perl-Unix-Conf
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -34,6 +35,7 @@ wpisy mog±ce znajdowaæ siê w konfiguracji.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
