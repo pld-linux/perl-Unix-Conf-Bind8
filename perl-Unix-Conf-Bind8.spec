@@ -10,7 +10,7 @@ Summary(pl):	Unix::Conf::Bind8 - manipulowanie plikami konfiguracyjnymi Bind8 i 
 Name:		perl-Unix-Conf-Bind8
 Version:	0.3
 Release:	1
-License:	GPL
+License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a31aae28a2deb512d8b49ce1eaca17db
@@ -38,7 +38,6 @@ wpisy mog±ce znajdowaæ siê w konfiguracji.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-
 %{__make}
 
 %{?with_tests:%{__make} test}
