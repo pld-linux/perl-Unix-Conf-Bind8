@@ -5,7 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Unix
 %define	pnam	Conf-Bind8
-Summary:	Unix::Conf::Bind8 - Front end for a suite of classes for manipulating a Bind8 conf and associated zone record files.
+Summary:	Unix::Conf::Bind8 - Set of classes for manipulating a Bind8 conf and associated zone record files.
+Summary(pl):	Unix::Conf::Bind8 - Zestaw modu³ów do manipulowania plikami konfiguracyjnymi Bind8.
 Name:		perl-Unix-Conf-Bind8
 Version:	0.3
 Release:	1
@@ -24,6 +25,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Unix::Conf::Bind8 - Front end for a suite of classes for manipulating
 a Bind8 conf and associated zone record files. Allows easy manipulation 
 of files, zones, acls and other entries in Bind8 config file.
+
+%description -l pl
+Unix::Conf::Bind8 jest zestawem modu³ów pozwalajacych w ³atwy sposób
+czytaæ oraz modyfikowaæ pliki konfiguracyjne Bind8 oraz pliki stref.
+Pozwala w ³atwy sposób dodawaæ nastêpne strefy, typy logów oraz inne
+wpisy mog±ce znajdowaæ siê w konfigu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
