@@ -3,8 +3,8 @@
 %bcond_with	tests	# do perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Unix
-%define	pnam	Conf-Bind8
+%define		pdir	Unix
+%define		pnam	Conf-Bind8
 Summary:	Unix::Conf::Bind8 - manipulating a Bind8 conf and associated zone record files
 Summary(pl):	Unix::Conf::Bind8 - manipulowanie plikami konfiguracyjnymi Bind8 i plikami stref
 Name:		perl-Unix-Conf-Bind8
