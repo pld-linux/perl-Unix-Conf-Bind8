@@ -1,12 +1,12 @@
 #
 # Conditional build:
-%bcond_with	tests	# do not perform "make test"
+%bcond_with	tests	# do perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Unix
 %define	pnam	Conf-Bind8
-Summary:	Unix::Conf::Bind8 - Set of classes for manipulating a Bind8 conf and associated zone record files.
-Summary(pl):	Unix::Conf::Bind8 - Zestaw modu³ów do manipulowania plikami konfiguracyjnymi Bind8.
+Summary:	Unix::Conf::Bind8 - manipulating a Bind8 conf and associated zone record files
+Summary(pl):	Unix::Conf::Bind8 - manipulowanie plikami konfiguracyjnymi Bind8 i plikami stref
 Name:		perl-Unix-Conf-Bind8
 Version:	0.3
 Release:	1
@@ -15,9 +15,9 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a31aae28a2deb512d8b49ce1eaca17db
 URL:		http://www.extremix.net/UnixConf/
+BuildRequires:	perl-Unix-Conf
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-Unix-Conf
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,10 +27,10 @@ a Bind8 conf and associated zone record files. Allows easy manipulation
 of files, zones, acls and other entries in Bind8 config file.
 
 %description -l pl
-Unix::Conf::Bind8 jest zestawem modu³ów pozwalajacych w ³atwy sposób
+Unix::Conf::Bind8 jest zestawem modu³ów pozwalaj±cych w ³atwy sposób
 czytaæ oraz modyfikowaæ pliki konfiguracyjne Bind8 oraz pliki stref.
 Pozwala w ³atwy sposób dodawaæ nastêpne strefy, typy logów oraz inne
-wpisy mog±ce znajdowaæ siê w konfigu.
+wpisy mog±ce znajdowaæ siê w konfiguracji.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
