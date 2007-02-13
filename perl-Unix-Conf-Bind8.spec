@@ -6,7 +6,7 @@
 %define		pdir	Unix
 %define		pnam	Conf-Bind8
 Summary:	Unix::Conf::Bind8 - manipulating a Bind8 conf and associated zone record files
-Summary(pl.UTF-8):   Unix::Conf::Bind8 - manipulowanie plikami konfiguracyjnymi Bind8 i plikami stref
+Summary(pl.UTF-8):	Unix::Conf::Bind8 - manipulowanie plikami konfiguracyjnymi Bind8 i plikami stref
 Name:		perl-Unix-Conf-Bind8
 Version:	0.3
 Release:	2
