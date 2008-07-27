@@ -9,7 +9,7 @@ Summary:	Unix::Conf::Bind8 - manipulating a Bind8 conf and associated zone recor
 Summary(pl.UTF-8):	Unix::Conf::Bind8 - manipulowanie plikami konfiguracyjnymi Bind8 i plikami stref
 Name:		perl-Unix-Conf-Bind8
 Version:	0.3
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
