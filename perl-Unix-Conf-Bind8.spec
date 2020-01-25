@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# do perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Unix
 %define		pnam	Conf-Bind8
 Summary:	Unix::Conf::Bind8 - manipulating a Bind8 conf and associated zone record files
